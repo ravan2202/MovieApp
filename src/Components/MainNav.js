@@ -10,12 +10,13 @@ import { useHistory } from 'react-router';
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
+    width: "100%",
     position:"fixed",
     bottom:0,
     backgroundColor:"#203647",
     zIndex:100,
   },
+ 
 });
 
 export default function SimpleBottomNavigation() {
@@ -41,10 +42,10 @@ export default function SimpleBottomNavigation() {
       <BottomNavigationAction 
       style={{color:"#EEFBFB"}}
       label="Trending" icon={<WhatshotIcon />} />
-      <BottomNavigationAction
+      <BottomNavigationAction 
       style={{color:"#EEFBFB"}}
        label="Movies" icon={<MovieIcon />} />
-      <BottomNavigationAction 
+      <BottomNavigationAction
       style={{color:"#EEFBFB"}}
       label="TV Series" icon={<TvIcon />} />
        <BottomNavigationAction 
