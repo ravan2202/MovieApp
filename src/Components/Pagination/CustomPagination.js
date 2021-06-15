@@ -2,7 +2,7 @@ import React from 'react'
 import  Pagination  from "@material-ui/lab/Pagination";
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 
-const CustomPagination = ({setPage,noOfPages = 10}) => {
+const CustomPagination = ({setPage,numOfPages = 10}) => {
     
     const darkTheme=createMuiTheme({
         palette:{
@@ -25,7 +25,7 @@ const CustomPagination = ({setPage,noOfPages = 10}) => {
         >
             <ThemeProvider theme={darkTheme}>
             <Pagination
-            count={noOfPages} 
+            count={numOfPages} 
             onChange={(e)=>handlePageChange(e.target.textContent)}
             hideNextButton
             hidePrevButton
