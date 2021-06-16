@@ -60,7 +60,7 @@ const Genres = ({
           style={{ margin: 2 }}
           label={genre.name}
           key={genre.id}
-          color="primary"
+          color="secondary"
           //variant="outlined"
           clickable
           size="small"
